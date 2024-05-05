@@ -1,0 +1,214 @@
+@font-face {
+  font-family: BentonSansBBVA-Bold;
+  src: url(../../assets/fonts/BentonSansBBVA-Bold.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: BentonSansBBVA-Book;
+  src: url(../../assets/fonts/BentonSansBBVA-Book.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: BentonSansBBVA-Medium;
+  src: url(../../assets/fonts/BentonSansBBVA-Medium.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: BentonSansBBVA-Light;
+  src: url(../../assets/fonts/BentonSansBBVA-Light.woff2) format("woff2");
+  font-display: swap;
+}
+
+/* bootstrap'ten gelen container üzerinde biraz değişiklik yaptım */
+.container {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px !important;
+  }
+}
+
+.header-topbar {
+  height: 32px;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+}
+
+.header-topbar a {
+  text-decoration: none;
+  font-family: BentonSansBBVA-Medium, sans-serif;
+  color: #bdbdbd;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.header-topbar-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+.header-topbar-list li {
+  display: flex;
+  align-items: center;
+}
+
+.header-topbar-list .topbar-seperator {
+  width: 1px;
+  height: 20px;
+  background: #bdbdbd;
+  margin-left: 10.5px;
+  margin-right: 10.5px;
+}
+
+.header-mainbar {
+  padding-top: 26px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.garanti-logo {
+  height: 39px;
+}
+
+.mainbar-duolinks {
+  margin-left: 53px;
+}
+
+.mainbar-linklist {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+}
+
+.mainbar-link:first-child {
+  margin-right: 28px;
+}
+
+.mainbar-linklist .link {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  opacity: 0.6;
+  font-family: BentonSansBBVA-Book, sans-serif;
+  line-height: 24px;
+  font-size: 15px;
+  padding: 8px 10px;
+}
+
+.mainbar-linklist .link.active {
+  opacity: 1;
+  font-family: BentonSansBBVA-Medium, sans-serif;
+  color: #225a8f;
+  border-bottom: 5px solid #004481;
+}
+
+.mainbar-right {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mainbar-buttonlist {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.mainbar-button:first-child {
+  margin-right: 9px;
+}
+
+button.mainbar-search {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  font-family: BentonSansBBVA-Medium, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #004481;
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.mainbar-seperator {
+  width: 1px;
+  height: 32px;
+  background: #e9e9e9;
+  align-self: center;
+  margin-right: 20px;
+}
+
+.musteri-ol-link {
+  display: block;
+  color: #004481;
+  font-family: BentonSansBBVA-Medium, sans-serif;
+  text-decoration: none;
+  padding-left: 11px;
+  padding-right: 11px;
+  font-size: 15px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.giris-yap-button {
+  background-color: #004481;
+  border: 0;
+  padding: 0.75rem 1rem;
+  font-size: 15px;
+  font-family: BentonSansBBVA-Medium, sans-serif;
+  line-height: 22px;
+  height: 48px;
+}
+
+.mainbar-navbar {
+  min-height: 64px;
+  margin-top: 7px;
+}
+
+.mainbar-navlist {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-left: -15px;
+  margin-bottom: 0;
+}
+
+.mainbar-navlist .item {
+  padding: 0 15px;
+}
+
+.mainbar-navlist .item a {
+  display: block;
+  padding: 21px 0;
+  color: #225a8f;
+  text-decoration: none;
+  font-family: BentonSansBBVA-Medium, sans-serif;
+  line-height: 24px;
+  font-size: 15px;
+}
+
+.sticky {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
