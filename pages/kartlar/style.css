@@ -212,3 +212,10 @@ button.mainbar-search {
   margin-right: auto;
   margin-left: auto;
 }
+
+.blue-section {
+  height: 360px;
+  background-image: url(/assets/kartlar/blue-header.png);
+  background-size: cover;
+  background-position: center;
+}
