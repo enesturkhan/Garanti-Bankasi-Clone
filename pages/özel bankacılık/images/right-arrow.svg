@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 1 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Horizontal_One_Card_Mobile-Copy" transform="translate(-98.000000, -15.000000)">
+            <g id="Group-2" transform="translate(99.000000, 16.000000)">
+                <g id="Group" opacity="0">
+                    <g id="grid-26-thin" transform="translate(-0.923077, -0.923077)">
+                        <rect id="divider-vertical" fill="#D3D3D3" opacity="0.5" x="13.5" y="1" width="1" height="26"></rect>
+                        <rect id="divider-horizontal" fill="#D3D3D3" opacity="0.5" x="1" y="13.5" width="26" height="1"></rect>
+                        <line x1="1.05950928" y1="1.0635083" x2="26.9351587" y2="26.935968" id="diagonal" stroke="#D3D3D3" opacity="0.5"></line>
+                        <line x1="1.07041138" y1="26.9368091" x2="26.9344128" y2="1.07298218" id="diagonal" stroke="#D3D3D3" opacity="0.5"></line>
+                        <path d="M27.5,0.5 L27.5,27.5 L0.5,27.5 L0.5,0.5 L27.5,0.5 Z" id="outer-box" stroke="#BDBDBD" opacity="0.5"></path>
+                        <path d="M25.3584566,5.05125171 L25.9483107,22.3524132 L2.64154342,22.9487483 L2.05168919,5.64758604 L25.3584566,5.05125171 Z" id="landscape-box" stroke="#BDBDBD" stroke-width="0.1" opacity="0.800000012"></path>
+                        <path d="M22.352414,2.05168919 L22.9487483,25.3584566 L5.64758604,25.9483108 L5.05125171,2.64154343 L22.352414,2.05168919 Z" id="portrait-box" stroke="#BDBDBD" stroke-width="0.1" opacity="0.800000012"></path>
+                        <rect id="middle-box" stroke="#BDBDBD" stroke-width="0.1" opacity="0.800000012" x="3.05" y="3.05" width="21.9" height="21.9" rx="0.8"></rect>
+                        <circle id="inner-circle" stroke="#BDBDBD" stroke-width="0.1" opacity="0.800000012" cx="14" cy="14" r="4.95"></circle>
+                        <circle id="middle-circle" stroke="#BDBDBD" stroke-width="0.1" opacity="0.800000012" cx="14" cy="14" r="7.95"></circle>
+                        <circle id="outerest-circle" stroke="#BDBDBD" stroke-width="0.1" opacity="0.800000012" cx="14" cy="14" r="11.95"></circle>
+                    </g>
+                </g>
+                <path d="M14.2303077,6.46153846 L15.6153077,7.84653846 L11.4615385,12 L15.6143077,16.1535385 L14.2303077,17.5385385 L8.69230769,12 L14.2303077,6.46153846 Z" id="icon-next" fill="#237ABA" transform="translate(12.153846, 12.000000) scale(-1, 1) translate(-12.153846, -12.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
