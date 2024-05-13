@@ -33,6 +33,12 @@
   }
 }
 
+.mobile-header {
+  min-height: 56px;
+  max-height: 56px;
+  align-items: center;
+}
+
 .header-topbar {
   height: 32px;
   background-color: #f4f4f4;
@@ -77,8 +83,17 @@
   flex-wrap: wrap;
 }
 
+.mobile-header-mainbar {
+  display: flex;
+  justify-content: space-between;
+}
+
 .garanti-logo {
   height: 39px;
+}
+
+.mobile-garanti-logo {
+  height: 27.5px;
 }
 
 .mainbar-duolinks {
@@ -344,4 +359,23 @@ button.mainbar-search {
 
 .btn-detayli-bilgi {
   color: #1464a5;
+}
+
+/* toggle menu */
+.toggle-menu {
+  display: none;
+  position: fixed;
+  top: 56px;
+  left: 0px;
+  background-color: white;
+  z-index: 66666;
+  width: 100%;
+  height: -webkit-fill-available;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toggle-menu.open {
+  display: block;
 }
