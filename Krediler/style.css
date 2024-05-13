@@ -1,0 +1,136 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+@font-face {
+    font-family: BentonSansBBVA-Bold;
+    src: url(../../assets/fonts/BentonSansBBVA-Bold.woff2) format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: BentonSansBBVA-Book;
+    src: url(../../assets/fonts/BentonSansBBVA-Book.woff2) format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: BentonSansBBVA-Medium;
+    src: url(../../assets/fonts/BentonSansBBVA-Medium.woff2) format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: BentonSansBBVA-Light;
+    src: url(../../assets/fonts/BentonSansBBVA-Light.woff2) format("woff2");
+    font-display: swap;
+}
+
+.font {
+    background-color: #d7dfd6;
+    font-size: 0.8rem;
+    padding-bottom: 0px;
+}
+
+.list-color {
+    color: #082145;
+}
+
+.btn-color {
+    background-color: #082145 !important;
+}
+
+.btn-color:hover {
+    background-color: #24426c !important;
+}
+
+.navalt {
+    color: #235A8F;
+}
+
+.bg-header {
+    background-image: url(/img/blue-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.btn-green {
+    background-color: #007E7E !important;
+
+}
+
+.card-body {
+    background-color: #F4F4F4;
+}
+
+ul li a {
+    list-style-type: none;
+    color: #082145;
+}
+
+ul li {
+    list-style-type: none;
+
+}
+
+.top-bar {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+
+}
+
+.top-botton {
+    position: fixed;
+    right: 32px;
+    bottom: 24px;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    background-color: #1464A5;
+    color: #FFFFFF;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 12px;
+
+}
+
+.mini-nav:hover {
+    text-decoration: underline;
+
+}
+
+.foot ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-con {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px;
+}
+
+
+
+.fit {
+    width: 100%;
+    /* Resmin genişliği, kartın genişliğine uysun */
+    height: 350px;
+    /* Resmin yüksekliği */
+    object-fit: cover;
+    /* Resmi keserek, konteyneri dolduracak şekilde ayarla */
+    object-position: top;
+    /* Resmin üst kısmını ön planda tut */
+}
