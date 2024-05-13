@@ -212,3 +212,68 @@ button.mainbar-search {
   margin-right: auto;
   margin-left: auto;
 }
+
+.blue-section {
+  height: 360px;
+  background-image: url(/assets/kartlar/blue-header.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.scroll-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.scrollable-menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 24px 0 0 0;
+}
+
+.snav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-right: 10px; /* Her liste öğesi arasında boşluk bırak */
+}
+
+.snav-link {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-wrap: nowrap;
+  font-family: BentonSansBBVA-Book, sans-serif;
+}
+
+.snav-link:hover {
+  font-family: BentonSansBBVA-Medium, sans-serif;
+}
+
+.snav-link .snav-text {
+  display: inline-block;
+  padding-bottom: 24px;
+}
+
+.snav-link .snav-text:hover {
+  border-bottom: 1px solid;
+}
+
+.nav-item.active .snav-link .snav-text {
+  border-bottom: 1px solid;
+}
+
+.nav-item.active a {
+  font-family: BentonSansBBVA-Medium, sans-serif;
+}
+
+.nav-kart {
+  border-bottom: 1px solid #bdbdbd;
+}
