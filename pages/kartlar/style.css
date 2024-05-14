@@ -33,12 +33,6 @@
   }
 }
 
-.mobile-header {
-  min-height: 56px;
-  max-height: 56px;
-  align-items: center;
-}
-
 .header-topbar {
   height: 32px;
   background-color: #f4f4f4;
@@ -228,6 +222,75 @@ button.mainbar-search {
   margin-left: auto;
 }
 
+.mobile-header {
+  min-height: 56px;
+  max-height: 56px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 4444;
+}
+
+/* toggle menu */
+.toggle-menu {
+  display: none;
+  position: fixed;
+  top: 56px;
+  left: 0px;
+  background-color: white;
+  z-index: 66666;
+  width: 100%;
+  height: -webkit-fill-available;
+}
+
+.toggle-menu.open {
+  display: block;
+}
+
+.toggle-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toggle-menu ul a {
+  text-decoration: none;
+  font-family: BentonSansBBVA-Book, sans-serif;
+  font-size: 15px;
+  color: #121212;
+  letter-spacing: 0;
+  line-height: 19px;
+  text-wrap: nowrap;
+}
+
+.toggle-menu ul li button {
+  border: none;
+  background-color: transparent;
+}
+
+.toggle-menu .forward-img {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.toggle-menu ul li button {
+  min-height: 56px;
+}
+
+.toggle-menu .text-wrapper {
+  border-bottom: 1px solid #e9e9e9;
+  padding: 15px 0px;
+}
+
+.toggle-menu .img-wrapper {
+  width: 24px;
+}
+
+/* buraya kadar olan css kodu ortak */
+/* fontlar, navbar */
+
 .blue-section {
   height: 360px;
   background-image: url(/assets/kartlar/blue-header.png);
@@ -255,7 +318,7 @@ button.mainbar-search {
 }
 
 .nav-item {
-  margin-right: 10px; /* Her liste öğesi arasında boşluk bırak */
+  margin-right: 10px;
 }
 
 .snav-link {
@@ -359,23 +422,4 @@ button.mainbar-search {
 
 .btn-detayli-bilgi {
   color: #1464a5;
-}
-
-/* toggle menu */
-.toggle-menu {
-  display: none;
-  position: fixed;
-  top: 56px;
-  left: 0px;
-  background-color: white;
-  z-index: 66666;
-  width: 100%;
-  height: -webkit-fill-available;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.toggle-menu.open {
-  display: block;
 }
