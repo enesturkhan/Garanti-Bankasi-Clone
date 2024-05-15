@@ -1,295 +1,584 @@
 * {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    flex: 0 0 100%;
+  flex: 0 0 100%;
 }
 
+@font-face {
+  font-family: BentonSansBBVA-Bold;
+  src: url(../../assets/fonts/BentonSansBBVA-Bold.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: BentonSansBBVA-Book;
+  src: url(../../assets/fonts/BentonSansBBVA-Book.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: BentonSansBBVA-Medium;
+  src: url(../../assets/fonts/BentonSansBBVA-Medium.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: BentonSansBBVA-Light;
+  src: url(../../assets/fonts/BentonSansBBVA-Light.woff2) format("woff2");
+  font-display: swap;
+}
+
+/* bootstrap'ten gelen container üzerinde biraz değişiklik yaptım */
+.container {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px !important;
+  }
+}
+
+.header-topbar {
+  height: 32px;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+}
+
+.header-topbar a {
+  text-decoration: none;
+  font-family: BentonSansBBVA-Medium, sans-serif;
+  color: #bdbdbd;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.header-topbar-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+.header-topbar-list li {
+  display: flex;
+  align-items: center;
+}
+
+.header-topbar-list .topbar-seperator {
+  width: 1px;
+  height: 20px;
+  background: #bdbdbd;
+  margin-left: 10.5px;
+  margin-right: 10.5px;
+}
+
+.header-mainbar {
+  padding-top: 26px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.mobile-header-mainbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.garanti-logo {
+  height: 39px;
+}
+
+.mobile-garanti-logo {
+  height: 27.5px;
+}
+
+.mainbar-duolinks {
+  margin-left: 53px;
+}
+
+.mainbar-linklist {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+}
+
+.mainbar-link:first-child {
+  margin-right: 28px;
+}
+
+.mainbar-linklist .link {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  opacity: 0.6;
+  font-family: BentonSansBBVA-Book, sans-serif;
+  line-height: 24px;
+  font-size: 15px;
+  padding: 8px 10px;
+}
+
+.mainbar-linklist .link.active {
+  opacity: 1;
+  font-family: BentonSansBBVA-Medium, sans-serif;
+  color: #225a8f;
+  border-bottom: 5px solid #004481;
+}
+
+.mainbar-right {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mainbar-buttonlist {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.mainbar-button:first-child {
+  margin-right: 9px;
+}
+
+button.mainbar-search {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  font-family: BentonSansBBVA-Medium, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #004481;
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.mainbar-seperator {
+  width: 1px;
+  height: 32px;
+  background: #e9e9e9;
+  align-self: center;
+  margin-right: 20px;
+}
+
+.musteri-ol-link {
+  display: block;
+  color: #004481;
+  font-family: BentonSansBBVA-Medium, sans-serif;
+  text-decoration: none;
+  padding-left: 11px;
+  padding-right: 11px;
+  font-size: 15px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.giris-yap-button {
+  background-color: #004481;
+  border: 0;
+  padding: 0.75rem 1rem;
+  font-size: 15px;
+  font-family: BentonSansBBVA-Medium, sans-serif;
+  line-height: 22px;
+  height: 48px;
+}
+
+.mainbar-navbar {
+  min-height: 64px;
+  margin-top: 7px;
+}
+
+.mainbar-navlist {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-left: -15px;
+  margin-bottom: 0;
+}
+
+.mainbar-navlist .item {
+  padding: 0 15px;
+}
+
+.mainbar-navlist .item a {
+  display: block;
+  padding: 21px 0;
+  color: #225a8f;
+  text-decoration: none;
+  font-family: BentonSansBBVA-Medium, sans-serif;
+  line-height: 24px;
+  font-size: 15px;
+}
+
+.sticky {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mobile-header {
+  min-height: 56px;
+  max-height: 56px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 4444;
+}
+
+/* toggle menu */
+.toggle-menu {
+  display: none;
+  position: fixed;
+  top: 56px;
+  left: 0px;
+  background-color: white;
+  z-index: 66666;
+  width: 100%;
+  height: -webkit-fill-available;
+}
+
+.toggle-menu.open {
+  display: block;
+}
+
+.toggle-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toggle-menu ul a {
+  text-decoration: none;
+  font-family: BentonSansBBVA-Book, sans-serif;
+  font-size: 15px;
+  color: #121212;
+  letter-spacing: 0;
+  line-height: 19px;
+  text-wrap: nowrap;
+}
+
+.toggle-menu ul li button {
+  border: none;
+  background-color: transparent;
+}
+
+.toggle-menu .forward-img {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.toggle-menu ul li button {
+  min-height: 56px;
+}
+
+.toggle-menu .text-wrapper {
+  border-bottom: 1px solid #e9e9e9;
+  padding: 15px 0px;
+}
+
+.toggle-menu .img-wrapper {
+  width: 24px;
+}
+
+/* buraya kadar olan css kodu ortak */
+/* fontlar, navbar */
+
 .navbar {
-    position: sticky;
-    background-color: #f8f9fa;
-    top: 0;
-    z-index: 1000;
-    align-items: center;
+  position: sticky;
+  background-color: #f8f9fa;
+  top: 0;
+  z-index: 1000;
+  align-items: center;
 }
 
 .menu {
-    list-style-type: none;
-    /* List bullet'ları kaldır */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    /* Listeyi yatay yap */
-
+  list-style-type: none;
+  /* List bullet'ları kaldır */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* Listeyi yatay yap */
 }
 
-
 .bi-house-door {
-    color: #1563a5;
-    font-size: 2rem;
+  color: #1563a5;
+  font-size: 2rem;
 }
 
 h2 {
-    font-weight: 100;
-    font-size: 36px;
-
+  font-weight: 100;
+  font-size: 36px;
 }
 
 .menu li {
-    color: #043263 !important;
-    padding: 0px 0px 0px 10px;
-    margin: 10px 20px 5px 5px;
-    /* Her link arasında boşluk */
+  color: #043263 !important;
+  padding: 0px 0px 0px 10px;
+  margin: 10px 20px 5px 5px;
+  /* Her link arasında boşluk */
 }
 
-
 .icerik {
-    background: rgb(21, 99, 165);
-    background: linear-gradient(162deg, rgba(21, 99, 165, 1) 0%, rgba(17, 88, 150, 1) 26%, rgba(8, 62, 115, 1) 31%, rgba(15, 81, 141, 1) 39%, rgba(12, 73, 130, 1) 44%, rgba(4, 50, 99, 1) 54%, rgba(4, 47, 99, 1) 59%);
+  background: rgb(21, 99, 165);
+  background: linear-gradient(
+    162deg,
+    rgba(21, 99, 165, 1) 0%,
+    rgba(17, 88, 150, 1) 26%,
+    rgba(8, 62, 115, 1) 31%,
+    rgba(15, 81, 141, 1) 39%,
+    rgba(12, 73, 130, 1) 44%,
+    rgba(4, 50, 99, 1) 54%,
+    rgba(4, 47, 99, 1) 59%
+  );
 }
 
 .beyaz {
-    color: #f8f9fa;
+  color: #f8f9fa;
 }
 
 .navbar2 {
-    position: sticky;
-    background-color: #f8f9fa;
-    top: 0;
-    z-index: 1000;
+  position: sticky;
+  background-color: #f8f9fa;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar2 ul a {
-    color: black;
+  color: black;
 }
 
 .menu2 {
-    list-style-type: none;
-    /* List bullet'ları kaldır */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    /* Linklerin içeriğiyle hizalamak için */
+  list-style-type: none;
+  /* List bullet'ları kaldır */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  /* Linklerin içeriğiyle hizalamak için */
 }
 
 .menu2 a {
-    text-decoration: none;
-    padding: 0 20px;
-    /* Sol ve sağ boşluk */
+  text-decoration: none;
+  padding: 0 20px;
+  /* Sol ve sağ boşluk */
 }
 
 .menu2 a:hover {
-    color: #000;
-    text-decoration: underline;
+  color: #000;
+  text-decoration: underline;
 }
 
 .menu2 li {
-    padding: 10px;
-    /* Her link arasında boşluk */
+  padding: 10px;
+  /* Her link arasında boşluk */
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .card {
-    background-color: #f4f4f4;
-    position: relative;
-    padding: 5px;
-    height: 100%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border: none;
-    margin-top: 20px;
+  background-color: #f4f4f4;
+  position: relative;
+  padding: 5px;
+  height: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  margin-top: 20px;
 }
 
 .card-title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .fit-cover {
-    width: 100%;
-    /* Resmin genişliği, kartın genişliğine uysun */
-    height: 350px;
-    /* Resmin yüksekliği */
-    object-fit: cover;
-    /* Resmi keserek, konteyneri dolduracak şekilde ayarla */
-    object-position: top;
-    /* Resmin üst kısmını ön planda tut */
+  width: 100%;
+  /* Resmin genişliği, kartın genişliğine uysun */
+  height: 350px;
+  /* Resmin yüksekliği */
+  object-fit: cover;
+  /* Resmi keserek, konteyneri dolduracak şekilde ayarla */
+  object-position: top;
+  /* Resmin üst kısmını ön planda tut */
 }
 
 .card p {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .card-body a {
-    color: #1563a5;
+  color: #1563a5;
 }
 
 .acıkgry {
-    background-color: #fbfbfb;
+  background-color: #fbfbfb;
 }
 
 .acıkgry a {
-    color: #1563a5;
+  color: #1563a5;
 }
 
 i {
-    color: #039fe2;
-    font-size: 1.5rem;
+  color: #039fe2;
+  font-size: 1.5rem;
 }
 
 i:hover {
-    color: white;
+  color: white;
 }
 
 .text-custom {
-    border-right: 2px solid #49a5e6;
-    padding-left: 5px;
-    padding-right: 15px;
-    font-size: 24px;
-    color: #039fe2;
+  border-right: 2px solid #49a5e6;
+  padding-left: 5px;
+  padding-right: 15px;
+  font-size: 24px;
+  color: #039fe2;
 }
 
 .text-custom:hover {
-    color: white;
+  color: white;
 }
 
 .img-fluid {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 .small {
-    margin-left: 30px;
+  margin-left: 30px;
 }
-
-
-
 
 /* Footer container */
 .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 70px;
-    background: #f8f9fa;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 70px;
+  background: #f8f9fa;
 }
 
-
 .footer-column ul {
-
-    list-style-type: none;
-    /* Listelerdeki marker'ları kaldırır */
-    padding: 0;
-    /* İç boşluğu sıfırlar */
-    margin: 0;
-    /* Dış boşluğu sıfırlar */
+  list-style-type: none;
+  /* Listelerdeki marker'ları kaldırır */
+  padding: 0;
+  /* İç boşluğu sıfırlar */
+  margin: 0;
+  /* Dış boşluğu sıfırlar */
 }
 
 .footer-column ul li a {
-    font-size: 15px;
-    font-weight: bold;
-    color: #1563a5;
+  font-size: 15px;
+  font-weight: bold;
+  color: #1563a5;
 }
 
 h6 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .footer-column ul li {
-    margin-bottom: 10px;
-    /* Liste öğeleri arasına alttan 10px boşluk ekler */
+  margin-bottom: 10px;
+  /* Liste öğeleri arasına alttan 10px boşluk ekler */
 }
 
 /* en alt */
 .last-footer {
-    padding: 5px 20px;
-    background-color: #062145;
+  padding: 5px 20px;
+  background-color: #062145;
 }
 
 .footer-column2 {
-    flex-wrap: wrap;
-
+  flex-wrap: wrap;
 }
 
 .footer-column2 li {
-    list-style-type: none;
-    margin-left: 0px;
-    padding-right: 10px;
+  list-style-type: none;
+  margin-left: 0px;
+  padding-right: 10px;
 }
 
 .footer-column2 li a {
-    color: #49a3e3;
-
+  color: #49a3e3;
 }
 
 .footer-column2 li a:hover {
-    color: white;
-    /* Metin rengi mavi */
+  color: white;
+  /* Metin rengi mavi */
 }
 
 .border {
-    border-right: 5px solid #039fe2;
-    height: 115px !important;
+  border-right: 5px solid #039fe2;
+  height: 115px !important;
 }
 
 .site {
-    margin-top: 3.5rem !important;
-    margin-left: 95px;
+  margin-top: 3.5rem !important;
+  margin-left: 95px;
 }
-.site-a{
-    color:#49a3e3;
-}
-
-.site a:hover{
-    color: white;
+.site-a {
+  color: #49a3e3;
 }
 
-.footer-son-li{
-
-    margin-top: 10px;
-    margin-right: 8px;
+.site a:hover {
+  color: white;
 }
 
-.ikon-ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.footer-son-li {
+  margin-top: 10px;
+  margin-right: 8px;
+}
+
+.ikon-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 @media screen and (max-width: 992px) {
-    .ikon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .ikon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .logoresponsive {
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-    .text-custom{
-        border: none;
-        justify-content: center;
-    }
-    .site{
-        display: flex;
-        justify-content: center;
-        margin: 0;
-    }
-    .son{
-        text-align: center;
-        margin: 0;
-    }
-    .footer-column2{
-        display: grid !important;
-        justify-content: center !important;
-        align-items: center;
-    }
-    .footer-son-li{
-        padding-bottom: 10px;
-    }
+  .logoresponsive {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .text-custom {
+    border: none;
+    justify-content: center;
+  }
+  .site {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .son {
+    text-align: center;
+    margin: 0;
+  }
+  .footer-column2 {
+    display: grid !important;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .footer-son-li {
+    padding-bottom: 10px;
+  }
 }
-
