@@ -37,7 +37,6 @@
   }
 }
 
-
 @media (min-width: 1201px) {
   .blue-section h1 {
     font-size: 48px !important;
@@ -53,7 +52,6 @@
 .container {
   padding-right: 16px;
   padding-left: 16px;
-
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -131,7 +129,6 @@ h1 {
   height: 333px;
   background-color: #062146;
   padding: 53px 0px 63px;
-
 }
 .footer flink {
   color: white;
@@ -204,8 +201,17 @@ li {
   flex-wrap: wrap;
 }
 
+.mobile-header-mainbar {
+  display: flex;
+  justify-content: space-between;
+}
+
 .garanti-logo {
   height: 39px;
+}
+
+.mobile-garanti-logo {
+  height: 27.5px;
 }
 
 .mainbar-duolinks {
@@ -304,9 +310,22 @@ button.mainbar-search {
   height: 48px;
 }
 
+.mainbar-navbar {
+  min-height: 64px;
+  margin-top: 7px;
+}
+
 .navbar {
   min-height: 64px;
   margin-top: 7px;
+}
+
+.mainbar-navlist {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-left: -15px;
+  margin-bottom: 0;
 }
 
 .navlist {
@@ -321,15 +340,14 @@ button.mainbar-search {
   padding: 0 15px;
 }
 
-.mainbar-navlist .nav-link a {
+.mainbar-navlist .item a {
   display: block;
   padding: 21px 0;
   color: #225a8f;
   text-decoration: none;
-  font-family: BentonSansBBVA-Bold, sans-serif;
+  font-family: BentonSansBBVA-Medium, sans-serif;
   line-height: 24px;
   font-size: 15px;
-  font-weight: 600;
 }
 
 .menulink a {
@@ -347,6 +365,72 @@ button.mainbar-search {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+}
+
+.mobile-header {
+  min-height: 56px;
+  max-height: 56px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 4444;
+}
+
+/* toggle menu */
+.toggle-menu {
+  display: none;
+  position: fixed;
+  top: 56px;
+  left: 0px;
+  background-color: white;
+  z-index: 66666;
+  width: 100%;
+  height: -webkit-fill-available;
+}
+
+.toggle-menu.open {
+  display: block;
+}
+
+.toggle-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toggle-menu ul a {
+  text-decoration: none;
+  font-family: BentonSansBBVA-Book, sans-serif;
+  font-size: 15px;
+  color: #121212;
+  letter-spacing: 0;
+  line-height: 19px;
+  text-wrap: nowrap;
+}
+
+.toggle-menu ul li button {
+  border: none;
+  background-color: transparent;
+}
+
+.toggle-menu .forward-img {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.toggle-menu ul li button {
+  min-height: 56px;
+}
+
+.toggle-menu .text-wrapper {
+  border-bottom: 1px solid #e9e9e9;
+  padding: 15px 0px;
+}
+
+.toggle-menu .img-wrapper {
+  width: 24px;
 }
 
 .scroll-container {
