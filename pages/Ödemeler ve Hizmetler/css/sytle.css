@@ -1,0 +1,644 @@
+@font-face {
+    font-family: BentonSansBBVA-Bold;
+    src: url(/Garanti-Bankasi-Clone/assets/fonts/BentonSansBBVA-Bold.woff2) format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: BentonSansBBVA-Book;
+    src: url(/Garanti-Bankasi-Clone/assets/fonts/BentonSansBBVA-Book.woff2) format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: BentonSansBBVA-Medium;
+    src: url(/Garanti-Bankasi-Clone/assets/fonts/BentonSansBBVA-Medium.woff2) format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: BentonSansBBVA-Light;
+    src: url(/Garanti-Bankasi-Clone/assets/fonts/BentonSansBBVA-Light.woff2) format("woff2");
+    font-display: swap;
+  }
+  
+  /* bootstrap'ten gelen container üzerinde biraz değişiklik yaptım */
+.container {
+  width: 100% !important; 
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+  
+  .header-topbar {
+    height: 32px;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-topbar a {
+    text-decoration: none;
+    font-family: BentonSansBBVA-Medium, sans-serif;
+    color: #bdbdbd;
+    font-size: 13px;
+    line-height: 24px;
+  }
+  
+  .header-topbar-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+  }
+  
+  .header-topbar-list li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-topbar-list .topbar-seperator {
+    width: 1px;
+    height: 20px;
+    background: #bdbdbd;
+    margin-left: 10.5px;
+    margin-right: 10.5px;
+  }
+  
+  .header-mainbar {
+    padding: 12px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .garanti-logo {
+    width: 147px;
+    height: 29px;
+    
+  }
+  
+  .mainbar-duolinks {
+    margin-left: 53px;
+  }
+  
+  .mainbar-linklist {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+  }
+  
+  .mainbar-link:first-child {
+    margin-right: 28px;
+  }
+  
+  .mainbar-linklist .link {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    opacity: 0.6;
+    font-family: BentonSansBBVA-Book, sans-serif;
+    line-height: 24px;
+    font-size: 15px;
+    padding: 8px 10px;
+  }
+  
+  .mainbar-linklist .link.active {
+    opacity: 1;
+    font-family: BentonSansBBVA-Medium, sans-serif;
+    color: #225a8f;
+    border-bottom: 5px solid #004481;
+  }
+  
+  .mainbar-right {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .mainbar-buttonlist {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  
+  .mainbar-button:first-child {
+    margin-right: 9px;
+  }
+  
+  button.mainbar-search {
+    background: none !important;
+    border: none;
+    padding: 0 !important;
+    font-family: BentonSansBBVA-Medium, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #004481;
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+  }
+  button.mainbar-search:hover {
+    color: black;
+  }
+  
+  .mainbar-seperator {
+    width: 1px;
+    height: 32px;
+    background: #e9e9e9;
+    align-self: center;
+    margin-right: 20px;
+  }
+  
+  .musteri-ol-link {
+    display: block;
+    color: #fff !important;
+    background-image: linear-gradient(100deg,#027e7e 50%,#02a5a5 0) !important;
+    background-size: 210% 100%;
+    transition: background-position .66667s cubic-bezier(.24,.22,.31,1.07);
+    background-position: 99% !important;
+    height: 48px;
+    font-family: BentonSansBBVA-Medium, sans-serif;
+    text-decoration: none;
+    padding-top: 0.75rem;
+    padding-left: 11px;
+    padding-right: 11px;
+    font-size: 15px;
+    line-height: 24px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  .musteri-ol-link:hover {
+    color: #fff !important;
+    background-position: 0 !important;
+  }
+  .musteri-ol-link1 {
+    display: block;
+    color: #004481 !important;
+    font-family: BentonSansBBVA-Medium, sans-serif;
+    text-decoration: none;
+    padding-left: 11px;
+    padding-right: 11px;
+    font-size: 15px;
+    line-height: 24px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  .musteri-ol-link1:hover {
+    color:  black!important;
+    background-position: 0 !important;
+  }
+  .giris-yap-button {
+    display: block;
+    color: #fff !important;
+    background-color: #004481;
+    background-image: linear-gradient(100deg,#072146 50%,#004481 0);
+    background-size: 210% 100%;
+    transition: background-position .66667s cubic-bezier(.24,.22,.31,1.07);
+    background-position: 99% !important;
+    height: 48px;
+    font-family: BentonSansBBVA-Medium, sans-serif;
+    text-decoration: none;
+    padding-top: 0.75rem 1rem;
+    padding-left: 11px;
+    padding-right: 11px;
+    font-size: 15px;
+    line-height: 24px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+.giris-yap-button:hover {
+    background-position: 0 !important;
+}
+  .mainbar-navbar {
+    min-height: 64px;
+    margin-top: 7px;
+  }
+  
+  .mainbar-navlist {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-left: -15px;
+    margin-bottom: 0;
+  }
+  
+  .mainbar-navlist .item {
+    padding: 0 15px;
+  }
+  
+  .mainbar-navlist .item a {
+    display: block;
+    padding: 21px 0;
+    color: #225a8f;
+    text-decoration: none;
+    font-family: BentonSansBBVA-Medium, sans-serif;
+    line-height: 24px;
+    font-size: 15px;
+  }
+  
+  /* Bunu Çözemedim .sticky {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  } */
+
+.first-section {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    top: 0;
+    left: 0;
+    background-image: url(/Garanti-Bankasi-Clone/pages/Ödemeler\ ve\ Hizmetler/img/image.png);
+    background-color: #004481;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.building-content {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    color: #fff;
+    padding: 0 10px 10px 10px;
+
+}
+h1 {
+    font-size: 20px !important;
+    line-height: 28px !important;
+    letter-spacing: -.5px !important;
+    font-family: BentonSansBBVA-Bold,sans-serif;
+    margin-bottom: 16px;
+}
+.building-content p {
+    font-size: 15px;
+    font-family: BentonSansBBVA-Book,sans-serif;
+    line-height: 24px;
+    margin: 16px
+}
+
+section .container .d-flex a {
+    text-decoration: none;
+    color: #121212;
+    margin: 0 3rem;
+}
+section .container .d-flex a:hover {
+    font-weight: 500;
+    border-bottom:#272727 1px solid;
+}
+h3 {
+    font-family: BentonSansBBVA-Light,sans-serif;
+    font-size: 24px !important;
+    line-height: 32px !important;
+    margin-top: 2.5rem !important;
+}
+  .card img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    max-width: 958px;
+    max-height: 240px;
+
+  }
+
+  #dahafazlagor  {
+    margin-top: 15px;
+    font-family: BentonSansBBVA-Medium,sans-serif;
+    font-size: 15px;
+    color: #2fa8ac;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    
+  }
+  #dahafazlagor img {
+    width: 13px;
+    height: auto;
+    margin-bottom: 4.5px;
+  }
+    .card {
+    border-radius: 1px !important;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+    box-sizing: border-box;
+    --bs-card-border-color: none !important;
+}
+#card-height1 {
+    height: 31rem;
+}
+#card-height2 {
+    height: 29rem;
+}
+.card .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 2rem 26px;
+    height: 100%;
+    justify-content: space-between;
+
+}
+.card-body h5 {
+    font-size: 26px;
+    font-family: BentonSansBBVA-Medium,sans-serif;
+    line-height: 32px;
+    margin-bottom: .75rem;
+}
+.card-body p{
+    font-size: 15px;
+    font-family: BentonSansBBVA-book,sans-serif;
+    line-height: 24px;
+    color: #666;
+}
+.card a.link {
+    font-family: BentonSansBBVA-Medium,sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #1464a5;
+}
+#card-odeme-button {
+    width: 139px;
+    height: 48px;
+    
+}
+section .card a.link img {
+  width: 24px;
+  height: 18px;
+}
+#yukaricik {
+  font-size: 14px;
+  display: flex;
+  position: fixed;
+  z-index: 4;
+  background-color: #1464A5;
+  align-items: center;
+  color: #fff;
+  padding: 14px;
+  border-radius: 14px;
+  right: 30px;
+  bottom: 30px;
+}
+#kendimicin-div {
+  margin-top: 64px;
+}
+
+#kendimicin {
+  color: #237aba;
+  text-decoration: none;
+  padding: 8px 6px;
+  font-family: BentonSansBBVA-Medium,sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+#kendimicin2 {
+  color: #237aba;
+  text-decoration: none;
+  padding: 8px 6px;
+  font-family: BentonSansBBVA-Book,sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  pointer-events: none; 
+}
+#prefooter {
+  padding-top: 56px;
+  padding-bottom: 48px;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+#prefooter h5 {
+  font-size: 15px;
+  font-family: BentonSansBBVA-Medium,sans-serif;
+  color: #121212;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+#prefooter p {
+  font-size: 12px;
+  font-family: BentonSansBBVA-Medium,sans-serif;
+  color: #1464a5;
+  line-height: 16px;
+}
+#cizgi {
+  border-top: 1px solid #dee2e6;
+}
+#text-start {
+  text-align: start;
+}
+#text-end {
+  text-align: start;
+}
+
+/* Recep'ten Kopyaladığım Footer */
+.last-footer {
+  padding: 5px 20px;
+  background-color: #062145;
+}
+
+.footer-column2 {
+  flex-wrap: wrap;
+
+}
+
+.footer-column2 li {
+  list-style-type: none;
+  margin-left: 0px;
+  padding-right: 10px;
+}
+
+.footer-column2 li a {
+  color: #49a5e6;
+  text-decoration: none;
+  font-family: BentonSansBBVA-Medium,sans-serif;
+  font-size: 15px;
+
+}
+
+.footer-column2 li a:hover {
+  color: white;
+  /* Metin rengi mavi */
+}
+
+.footer-son-li{
+
+  margin-top: 10px;
+  margin-right: 8px;
+}
+.logoresponsive ul {
+  padding-left: 0;
+}
+.logoresponsive img {
+  max-width: 299px;
+  max-height: 57px;
+}
+
+.site {
+  list-style-type: none;
+  text-align: end;
+}
+.site-a{
+  color:#49a3e3;
+  text-decoration: none;
+  font-family: BentonSansBBVA-Medium,sans-serif;
+  font-size: 15px;
+}
+
+.ikon-ul .link {
+  border-right: 2px solid #49a5e6;
+  padding-left: 5px;
+  padding-right: 15px;
+  font-size: 18px;
+  color: #49a5e6;
+
+}
+
+
+.site a:hover{
+  color: white;
+}
+.ikon-ul li i {
+  color: #039fe2;
+  font-size: 1.25rem;
+  border-radius: 75%;
+  font-family: BentonSansBBVA-Medium,sans-serif;
+  }
+  .ikon-ul li a {
+    text-decoration: none;
+  }
+  .ikon-ul li i:hover {
+    color: white;
+    
+  }
+
+
+.ikon-ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .ikon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+  }
+
+  .logoresponsive {
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+  }
+  .site {
+    text-align: center;
+  }
+  .son{
+      text-align: center;
+      margin: 0;
+  }
+  .footer-column2{
+      display: grid !important;
+      justify-content: center !important;
+      align-items: center;
+  }
+  .footer-son-li{
+      padding-bottom: 10px;
+  }
+}
+
+
+@media (min-width: 576px) {
+  .building-content {
+    top: 30%;
+}
+
+}
+
+@media (min-width: 768px) {
+  #card-height1 {
+    height: 30rem;
+}
+#card-height2 {
+    height: 28rem;
+}
+
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 28px !important;
+        line-height: 36px !important;
+    }
+    #text-start {
+      text-align: start;
+    }
+    #text-end {
+      text-align: start;
+    }
+    .container {
+      max-width: 960px !important;
+    }
+    h3 {
+      font-family: BentonSansBBVA-Light,sans-serif !important;
+      font-size: 36px !important;
+  }
+  .building-content p {
+    font-size: 18px;
+    font-family: BentonSansBBVA-Medium,sans-serif;}
+    #card-height1 {
+      height: 35rem;
+  }
+  #card-height2 {
+      height: 33rem;
+  }
+  .first-section {
+    height: 360px;
+}
+.header-mainbar {
+  padding: 26px 0 0 0;
+}
+h3 {
+  margin-top: 5rem !important;
+}
+#prefooter p {
+  font-size: 15px;
+}
+#cizgi {
+  border-top: 0;
+}
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 48px !important;
+        line-height: 56px !important;
+    }
+    .building-content p {
+        font-size: 18px;
+        font-family: BentonSansBBVA-Medium,sans-serif;
+    }
+  .container {
+    max-width: 1200px !important;
+  }
+  .garanti-logo {
+    width: unset;
+    height: 39px;
+  }
+}
+
+@media (min-width: 1400px) {
+
+}

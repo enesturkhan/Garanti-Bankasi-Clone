@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    flex: 0 0 100%;
+}
+
+.navbar {
+    position: sticky;
+    background-color: #f8f9fa;
+    top: 0;
+    z-index: 1000;
+    align-items: center;
+}
+
+.menu {
+    list-style-type: none;
+    /* List bullet'ları kaldır */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Listeyi yatay yap */
+
+}
+
+
+.bi-house-door {
+    color: #1563a5;
+    font-size: 2rem;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 36px;
+
+}
+
+.menu li {
+    color: #043263 !important;
+    padding: 0px 0px 0px 10px;
+    margin: 10px 20px 5px 5px;
+    /* Her link arasında boşluk */
+}
+
+
+.icerik {
+    background: rgb(21, 99, 165);
+    background: linear-gradient(162deg, rgba(21, 99, 165, 1) 0%, rgba(17, 88, 150, 1) 26%, rgba(8, 62, 115, 1) 31%, rgba(15, 81, 141, 1) 39%, rgba(12, 73, 130, 1) 44%, rgba(4, 50, 99, 1) 54%, rgba(4, 47, 99, 1) 59%);
+}
+
+.beyaz {
+    color: #f8f9fa;
+}
+
+.navbar2 {
+    position: sticky;
+    background-color: #f8f9fa;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar2 ul a {
+    color: black;
+}
+
+.menu2 {
+    list-style-type: none;
+    /* List bullet'ları kaldır */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    /* Linklerin içeriğiyle hizalamak için */
+}
+
+.menu2 a {
+    text-decoration: none;
+    padding: 0 20px;
+    /* Sol ve sağ boşluk */
+}
+
+.menu2 a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.menu2 li {
+    padding: 10px;
+    /* Her link arasında boşluk */
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    background-color: #f4f4f4;
+    position: relative;
+    padding: 5px;
+    height: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin-top: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.fit-cover {
+    width: 100%;
+    /* Resmin genişliği, kartın genişliğine uysun */
+    height: 350px;
+    /* Resmin yüksekliği */
+    object-fit: cover;
+    /* Resmi keserek, konteyneri dolduracak şekilde ayarla */
+    object-position: top;
+    /* Resmin üst kısmını ön planda tut */
+}
+
+.card p {
+    opacity: 0.5;
+}
+
+.card-body a {
+    color: #1563a5;
+}
+
+.acıkgry {
+    background-color: #fbfbfb;
+}
+
+.acıkgry a {
+    color: #1563a5;
+}
+
+i {
+    color: #039fe2;
+    font-size: 1.5rem;
+}
+
+i:hover {
+    color: white;
+}
+
+.text-custom {
+    border-right: 2px solid #49a5e6;
+    padding-left: 5px;
+    padding-right: 15px;
+    font-size: 24px;
+    color: #039fe2;
+}
+
+.text-custom:hover {
+    color: white;
+}
+
+.img-fluid {
+    margin-left: 15px;
+}
+
+.small {
+    margin-left: 30px;
+}
+
+
+
+
+/* Footer container */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px;
+    background: #f8f9fa;
+}
+
+
+.footer-column ul {
+
+    list-style-type: none;
+    /* Listelerdeki marker'ları kaldırır */
+    padding: 0;
+    /* İç boşluğu sıfırlar */
+    margin: 0;
+    /* Dış boşluğu sıfırlar */
+}
+
+.footer-column ul li a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1563a5;
+}
+
+h6 {
+    font-weight: bold;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    /* Liste öğeleri arasına alttan 10px boşluk ekler */
+}
+
+/* en alt */
+.last-footer {
+    padding: 5px 20px;
+    background-color: #062145;
+}
+
+.footer-column2 {
+    flex-wrap: wrap;
+
+}
+
+.footer-column2 li {
+    list-style-type: none;
+    margin-left: 0px;
+    padding-right: 10px;
+}
+
+.footer-column2 li a {
+    color: #49a3e3;
+
+}
+
+.footer-column2 li a:hover {
+    color: white;
+    /* Metin rengi mavi */
+}
+
+.border {
+    border-right: 5px solid #039fe2;
+    height: 115px !important;
+}
+
+.site {
+    margin-top: 3.5rem !important;
+    margin-left: 95px;
+}
+.site-a{
+    color:#49a3e3;
+}
+
+.site a:hover{
+    color: white;
+}
+
+.footer-son-li{
+
+    margin-top: 10px;
+    margin-right: 8px;
+}
+
+.ikon-ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .ikon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logoresponsive {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-custom{
+        border: none;
+        justify-content: center;
+    }
+    .site{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .son{
+        text-align: center;
+        margin: 0;
+    }
+    .footer-column2{
+        display: grid !important;
+        justify-content: center !important;
+        align-items: center;
+    }
+    .footer-son-li{
+        padding-bottom: 10px;
+    }
+}
+

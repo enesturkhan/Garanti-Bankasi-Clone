@@ -1,0 +1,32 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+	<title>right-arrow-svg</title>
+	<style>
+		.s0 { opacity: .5;fill: #d3d3d3 } 
+		.s1 { opacity: .5;fill: none;stroke: #d3d3d3 } 
+		.s2 { opacity: .5;fill: none;stroke: #bdbdbd } 
+		.s3 { opacity: .8;fill: none;stroke: #bdbdbd;stroke-width: .4 } 
+		.s4 { fill: #237aba } 
+	</style>
+	<g id="UI">
+		<g id="Horizontal_One_Card_Mobile-Copy">
+			<g id="Group-2">
+				<g id="Group" style="opacity: 0">
+					<g id="grid-26-thin">
+						<path id="divider-vertical" class="s0" d="m13.6 0.1h1v26h-1z"/>
+						<path id="divider-horizontal" class="s0" d="m1.1 12.6h26v1h-26z"/>
+						<path id="diagonal" class="s1" d="m27 0.1l-25.9 25.9"/>
+						<path id="diagonal" class="s1" d="m27 26l-25.9-25.9"/>
+						<path id="outer-box" fill-rule="evenodd" class="s2" d="m0.6-0.4h27v27h-27z"/>
+						<path id="landscape-box" fill-rule="evenodd" class="s3" d="m2.7 4.1l-0.6 17.3 23.3 0.6 0.6-17.3z"/>
+						<path id="portrait-box" fill-rule="evenodd" class="s3" d="m5.7 1.1l-0.6 23.3 17.3 0.6 0.6-23.3z"/>
+						<path id="middle-box" class="s3" d="m3.1 2.9c0-0.4 0.4-0.8 0.8-0.8h20.3c0.5 0 0.8 0.4 0.8 0.8v20.3c0 0.5-0.3 0.8-0.8 0.8h-20.3c-0.4 0-0.8-0.3-0.8-0.8z"/>
+						<path id="inner-circle" class="s3" d="m14.1 8.1c2.7 0 4.9 2.2 4.9 5 0 2.7-2.2 4.9-4.9 4.9-2.8 0-5-2.2-5-4.9 0-2.8 2.2-5 5-5z"/>
+						<path id="middle-circle" class="s3" d="m14.1 5.1c4.4 0 7.9 3.6 7.9 8 0 4.4-3.5 7.9-7.9 7.9-4.4 0-8-3.5-8-7.9 0-4.4 3.6-8 8-8z"/>
+						<path id="outerest-circle" class="s3" d="m14.1 1.1c6.6 0 11.9 5.4 11.9 12 0 6.6-5.3 11.9-11.9 11.9-6.6 0-12-5.3-12-11.9 0-6.6 5.4-12 12-12z"/>
+					</g>
+				</g>
+				<path id="icon-next" fill-rule="evenodd" class="s4" d="m14.1 6.5l1.4 1.3-4.2 4.2 4.2 4.2-1.4 1.3-5.6-5.5z"/>
+			</g>
+		</g>
+	</g>
+</svg>
