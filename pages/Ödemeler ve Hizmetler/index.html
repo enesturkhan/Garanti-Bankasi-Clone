@@ -1,493 +1,799 @@
 <!DOCTYPE html>
 <html lang="tr">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ödemeler ve Hizmetler | Garanti BBVA</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="./css/sytle.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
+  </head>
 
-<body>
-    <div class="header">
-        <div class="header-topbar d-none d-xl-block">
-            <div class="container">
-                <div class="">
-                    <ul class="header-topbar-list ms-auto">
-                        <li>
-                            <a href="">Şube ve ATM'ler</a>
-                            <div class="topbar-seperator"></div>
-                        </li>
-                        <li>
-                            <a href="">Ürün ve Hizmet Ücretleri</a>
-                            <div class="topbar-seperator"></div>
-                        </li>
-                        <li><a href="">EN</a></li>
-                    </ul>
-                </div>
-            </div>
+  <body>
+    <div class="header d-none d-xl-block">
+      <div class="header-topbar">
+        <div class="container">
+          <div class="">
+            <ul class="header-topbar-list ms-auto">
+              <li>
+                <a href="">Şube ve ATM'ler</a>
+                <div class="topbar-seperator"></div>
+              </li>
+              <li>
+                <a href="">Ürün ve Hizmet Ücretleri</a>
+                <div class="topbar-seperator"></div>
+              </li>
+              <li><a href="">EN</a></li>
+            </ul>
+          </div>
         </div>
-        <div id="id1" class="container">
-            <div class="header-mainbar">
-                <div class="mainbar-logo">
-                    <a class="" href="index.html">
-                        <img class="garanti-logo" src="/Garanti-Bankasi-Clone/assets/garanti_logo.svg"
-                            alt="Garanti BBVA" />
-                    </a>
-                </div>
-                <div class="mainbar-duolinks d-none d-xl-block">
-                    <ul class="mainbar-linklist me-auto my-3 my-lg-0">
-                        <li class="mainbar-link">
-                            <a class="link active" href="#">KENDİM İÇİN</a>
-                        </li>
-                        <li class="mainbar-link">
-                            <a class="link" href="about.html">İŞİM İÇİN</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mainbar-right">
-                    <button class="mainbar-search">
-                        <img style="margin-right: 8px" src="/Garanti-Bankasi-Clone/assets/search-icon.svg"
-                            alt="search-icon" />
-                        <span class="d-none d-lg-block">Arama Yap</span>
-                    </button>
-                    <div class="mainbar-seperator"></div>
-                        <div class="mainbar-duobuttons d-none d-xl-block">
-                            <ul class="mainbar-buttonlist">
-                                <li class="mainbar-button">
-                                    <a class="musteri-ol-link1" href="#asd">Müşteri Ol</a>
-                                </li>
-                                <li class="mainbar-button">
-                                    <button class="giris-yap-button btn btn-primary rounded-0 px-3 mb-2 mb-lg-0">
-                                        Giriş Yap
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <nav class="mainbar-navbar d-none d-xl-block">
-                        <ul class="mainbar-navlist">
-                            <li class="item">
-                                <a href="">Mevduat</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Yatırım</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Krediler</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Kartlar</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Dijital Bankacılık</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Sigorta ve Emeklilik</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Ödemeler ve Hizmetler</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Özel Bankacılık</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+      </div>
+      <div id="id1" class="container">
+        <div class="header-mainbar">
+          <div class="mainbar-logo">
+            <a class="" href="index.html">
+              <img
+                class="img-fluid garanti-logo"
+                src="/assets/garanti_logo.svg"
+                alt="Garanti BBVA"
+              />
+            </a>
+          </div>
+          <div class="mainbar-duolinks">
+            <ul class="mainbar-linklist me-auto my-3 my-lg-0">
+              <li class="mainbar-link">
+                <a class="link active" href="#">KENDİM İÇİN</a>
+              </li>
+              <li class="mainbar-link">
+                <a class="link" href="about.html">İŞİM İÇİN</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mainbar-right">
+            <button class="mainbar-search">
+              <img
+                style="margin-right: 8px"
+                src="/assets/search-icon.svg"
+                alt="search-icon"
+              />
+              <span>Arama Yap</span>
+            </button>
+            <div class="mainbar-seperator"></div>
+            <div class="mainbar-duobuttons">
+              <ul class="mainbar-buttonlist">
+                <li class="mainbar-button">
+                  <a class="musteri-ol-link" href="#asd">Müşteri Ol</a>
+                </li>
+                <li class="mainbar-button">
+                  <button
+                    class="giris-yap-button btn btn-primary rounded-0 px-3 mb-2 mb-lg-0"
+                  >
+                    Giriş Yap
+                  </button>
+                </li>
+              </ul>
             </div>
+          </div>
+          <nav class="mainbar-navbar">
+            <ul class="mainbar-navlist">
+              <li class="item">
+                <a href="/pages/mevduat/index.html">Mevduat</a>
+              </li>
+              <li class="item">
+                <a href="/pages/yatirim/index.html">Yatırım</a>
+              </li>
+              <li class="item">
+                <a href="/pages/Krediler/index.html">Krediler</a>
+              </li>
+              <li class="item">
+                <a href="/pages/kartlar/index.html">Kartlar</a>
+              </li>
+              <li class="item">
+                <a href="/pages/dijital bankacilik/index.html"
+                  >Dijital Bankacılık</a
+                >
+              </li>
+              <li class="item">
+                <a href="/pages/sigorta-ve-emeklilik/index.html"
+                  >Sigorta ve Emeklilik</a
+                >
+              </li>
+              <li class="item">
+                <a href="/pages/Ödemeler ve Hizmetler/index.html"
+                  >Ödemeler ve Hizmetler</a
+                >
+              </li>
+              <li class="item">
+                <a href="/pages/özel bankacılık/index.html">Özel Bankacılık</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-
-        <div class="building-container">
-            <div class="first-section">
-                <div class="building-content">
-                    <h1 class="">
-                        Ödemeler ve Hizmetler
-                    </h1>
-                    <p id="h1-paragrafi" class="">Ödemelerinizi dijital kanallarımız üzerinden de kolayca halledebilir
-                        ve Garanti BBVA'nın sınır tanımayan hizmetlerinden yararlanabilirsiniz.
-                    </p>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="mobile-header d-flex d-xl-none">
+      <div class="container-fluid px-4">
+        <div class="mobile-header-mainbar">
+          <a class="" href="index.html">
+            <img
+              class="img-fluid mobile-garanti-logo"
+              src="/assets/garanti_logo.svg"
+              alt="Garanti BBVA"
+            />
+          </a>
+          <button class="navbar-toggler" type="button" onclick="toggleMenu()">
+            Menu
+            <i class="bi-list fs-4"></i>
+          </button>
+          <div class="toggle-menu">
+            <ul class="px-4">
+              <li>
+                <button class="d-flex w-100 align-items-center">
+                  <div class="img-wrapper">
+                    <img src="/assets/mevduat-icon.svg" alt="" />
+                  </div>
+                  <div class="d-flex w-100 text-wrapper ms-4">
+                    <a class="" href="/pages/mevduat/index.html">Mevduat</a>
+                    <span class="w-100 d-flex justify-content-end">
+                      <img
+                        class="forward-img"
+                        src="/assets/forward-to.svg"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                </button>
+              </li>
+              <li>
+                <button class="d-flex w-100 align-items-center">
+                  <div class="img-wrapper">
+                    <img src="/assets/yatirim-icon.svg" alt="" />
+                  </div>
+                  <div class="d-flex w-100 text-wrapper ms-4">
+                    <a class="" href="/pages/yatirim/index.html">Yatırım</a>
+                    <span class="w-100 d-flex justify-content-end">
+                      <img
+                        class="forward-img"
+                        src="/assets/forward-to.svg"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                </button>
+              </li>
+              <li>
+                <button class="d-flex w-100 align-items-center">
+                  <div class="img-wrapper">
+                    <img src="/assets/krediler-icon.svg" alt="" />
+                  </div>
+                  <div class="d-flex w-100 text-wrapper ms-4">
+                    <a class="" href="/pages/Krediler/index.html">Krediler</a>
+                    <span class="w-100 d-flex justify-content-end">
+                      <img
+                        class="forward-img"
+                        src="/assets/forward-to.svg"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                </button>
+              </li>
+              <li>
+                <button class="d-flex w-100 align-items-center">
+                  <div class="img-wrapper">
+                    <img src="/assets/kartlar-icon.svg" alt="" />
+                  </div>
+                  <div class="d-flex w-100 text-wrapper ms-4">
+                    <a class="" href="/pages/kartlar/index.html">Kartlar</a>
+                    <span class="w-100 d-flex justify-content-end">
+                      <img
+                        class="forward-img"
+                        src="/assets/forward-to.svg"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                </button>
+              </li>
+              <li>
+                <button class="d-flex w-100 align-items-center">
+                  <div class="img-wrapper">
+                    <img src="/assets/dijital-bankacilik-icon.svg" alt="" />
+                  </div>
+                  <div class="d-flex w-100 text-wrapper ms-4">
+                    <a class="" href="/pages/dijital bankacilik/index.html"
+                      >Dijital Bankacılık</a
+                    >
+                    <span class="w-100 d-flex justify-content-end">
+                      <img
+                        class="forward-img"
+                        src="/assets/forward-to.svg"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                </button>
+              </li>
+              <li>
+                <button class="d-flex w-100 align-items-center">
+                  <div class="img-wrapper">
+                    <img src="/assets/sigorta-ve-emeklilik-icon.svg" alt="" />
+                  </div>
+                  <div class="d-flex w-100 text-wrapper ms-4">
+                    <a class="" href="/pages/sigorta-ve-emeklilik/index.html"
+                      >Sigorta ve Emeklilik</a
+                    >
+                    <span class="w-100 d-flex justify-content-end">
+                      <img
+                        class="forward-img"
+                        src="/assets/forward-to.svg"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                </button>
+              </li>
+              <li>
+                <button class="d-flex w-100 align-items-center">
+                  <div class="img-wrapper">
+                    <img src="/assets/odemeler-ve-hizmetler-icon.svg" alt="" />
+                  </div>
+                  <div class="d-flex w-100 text-wrapper ms-4">
+                    <a class="" href="/pages/Ödemeler ve Hizmetler/index.html"
+                      >Ödemeler ve Hizmetler</a
+                    >
+                    <span class="w-100 d-flex justify-content-end">
+                      <img
+                        class="forward-img"
+                        src="/assets/forward-to.svg"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                </button>
+              </li>
+              <li>
+                <button class="d-flex w-100 align-items-center">
+                  <div class="img-wrapper">
+                    <img src="/assets/ozel-bankacilik-icon.svg" alt="" />
+                  </div>
+                  <div class="d-flex w-100 text-wrapper ms-4">
+                    <a class="" href="/pages/özel bankacılık/index.html"
+                      >Özel Bankacılık</a
+                    >
+                    <span class="w-100 d-flex justify-content-end">
+                      <img
+                        class="forward-img"
+                        src="/assets/forward-to.svg"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div></div>
+      </div>
+    </div>
 
-        <section class="border-bottom mb-5 sticky-top bg-white shadow-sm   ">
-            <div class="container">
-                <div class="d-flex justify-content-center ps-1 ">
-                    <a class="nav-item fw-semibold me-lg-5 me-2 px-1 py-4 " href="#">Ödeme</a>
-                    <a class="nav-item ms-lg-5 ms-2 px-1 py-4" href="#">Hizmet</a>
+    <div class="building-container">
+      <div class="first-section">
+        <div class="building-content">
+          <h1 class="">Ödemeler ve Hizmetler</h1>
+          <p id="h1-paragrafi" class="">
+            Ödemelerinizi dijital kanallarımız üzerinden de kolayca halledebilir
+            ve Garanti BBVA'nın sınır tanımayan hizmetlerinden
+            yararlanabilirsiniz.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div></div>
+
+    <section class="border-bottom mb-5 sticky-top bg-white shadow-sm">
+      <div class="container">
+        <div class="d-flex justify-content-center ps-1">
+          <a class="nav-item fw-semibold me-lg-5 me-2 px-1 py-4" href="#"
+            >Ödeme</a
+          >
+          <a class="nav-item ms-lg-5 ms-2 px-1 py-4" href="#">Hizmet</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h3 class="text-center">Ödemeler</h3>
+        <div class="row">
+          <div class="col-12 col-lg-4 p-3">
+            <div class="card bg-light" id="card-height1">
+              <img
+                class="card-img-top"
+                src="./img/card1.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title">FAST Para Transferi Sistemi</h5>
+                  <p class="card-text">
+                    FAST para sistemi ile 7/24 para transferi ve kolay adres
+                    tanımlama Garanti BBVA’da! IBAN’sız istediğiniz zaman para
+                    göndermenin kolaylığını yaşayın!
+                  </p>
                 </div>
+                <a href="#" class="link pb-3"
+                  ><img class="pb-1 me-2" src="./img/card-icon.svg" alt="" />
+                  <span>Detaylı Bilgi</span></a
+                >
+              </div>
             </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <h3 class="text-center">Ödemeler</h3>
-                <div class="row">
-                    <div class="col-12 col-lg-4 p-3">
-                        <div class="card bg-light" id="card-height1">
-                            <img class="card-img-top"
-                                src="./img/card1.png"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <div>
-                                    <h5 class="card-title">FAST Para Transferi Sistemi</h5>
-                                    <p class="card-text">FAST para sistemi ile 7/24 para transferi ve kolay adres
-                                        tanımlama Garanti BBVA’da! IBAN’sız istediğiniz zaman para göndermenin
-                                        kolaylığını yaşayın!</p>
-                                </div>
-                                <a href="#" class="link pb-3"><img class="pb-1 me-2"
-                                        src="./img/card-icon.svg"
-                                        alt=""> <span>Detaylı Bilgi</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 p-3">
-                        <div class="card bg-light" id="card-height1">
-                            <img class="card-img-top"
-                                src="./img/card2.png"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <div>
-                                    <h5 class="card-title">Motorlu Taşıtlar Vergisi (MTV) Ödeme</h5>
-                                    <p class="card-text">MTV ödemelerinizi Garantibbva.com.tr, Garanti BBVA Mobil,
-                                        Garanti BBVA İnternet, BonusFlaş, 444 0 333 Garanti BBVA Müşteri İletişim
-                                        Merkezi ve Garanti BBVA ATM’lerinden yapabilirsiniz.</p>
-                                </div>
-                                <a href="#" id="card-odeme-button" class="musteri-ol-link text-center ">Ödeme Yap</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 p-3">
-                        <div class="card bg-light" id="card-height1">
-                            <img class="card-img-top"
-                                src="./img/card3.png"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <div>
-                                    <h5 class="card-title">Ödeme İste</h5>
-                                    <p class="card-text">Beklediğiniz bir ödeme varsa ya da nakde ihtiyaç duyuyorsanız
-                                        tanıdıklarınızdan para transferi talep edebilir ve sizden istenen para transferi
-                                        taleplerini takip edebilirsiniz.</p>
-                                </div>
-                                <a href="#" class="link pb-3"><img class="pb-1 me-2"
-                                        src="./img/card-icon.svg"
-                                        alt=""> <span>Detaylı Bilgi</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 p-3">
-                        <div class="card bg-light" id="card-height2">
-                            <img class="card-img-top"
-                                src="./img/card4.png"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <div>
-                                    <h5 class="card-title">Trafik Para Cezası Ödeme</h5>
-                                    <p class="card-text">Garanti BBVA kredi ve banka kartlarıyla trafik para
-                                        cezalarınızı hızlıca ödeyebilirsiniz.</p>
-                                </div>
-                                <a href="#" id="card-odeme-button" class="musteri-ol-link text-center ">Ödeme Yap</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 p-3">
-                        <div class="card bg-light" id="card-height2">
-                            <img class="card-img-top"
-                                src="./img/card5.png"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <div>
-                                    <h5 class="card-title">HGS</h5>
-                                    <p class="card-text">HGS başvuru ve bakiye yükleme işlemlerinizde Garanti BBVA Mobil
-                                        ve İnternet Bankacılığı seçeneklerinden yararlanabilir, rahat ve hızlı bir
-                                        geçişin keyfini sürebilirsiniz.</p>
-                                </div>
-                                <a href="#" class="link mb-3"><img class="pb-1 me-2"
-                                        src="./img/card-icon.svg"
-                                        alt=""> <span>Detaylı Bilgi</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 p-3">
-                        <div class="card bg-light" id="card-height2">
-                            <img class="card-img-top"
-                                src="./img/card6.png"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <div>
-                                    <h5 class="card-title">Fatura Ödeme</h5>
-                                    <p class="card-text">Online fatura ödeme işlemlerinizi Garanti BBVA ile hızlı ve
-                                        güvenli bir şekilde gerçekleştirin.</p>
-                                </div>
-                                <a href="#" class="link pb-3"><img class="pb-1 me-2"
-                                        src="./img/card-icon.svg"
-                                        alt=""> <span>Detaylı Bilgi</span></a>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <div class="col-12 col-lg-4 p-3">
+            <div class="card bg-light" id="card-height1">
+              <img
+                class="card-img-top"
+                src="./img/card2.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title">
+                    Motorlu Taşıtlar Vergisi (MTV) Ödeme
+                  </h5>
+                  <p class="card-text">
+                    MTV ödemelerinizi Garantibbva.com.tr, Garanti BBVA Mobil,
+                    Garanti BBVA İnternet, BonusFlaş, 444 0 333 Garanti BBVA
+                    Müşteri İletişim Merkezi ve Garanti BBVA ATM’lerinden
+                    yapabilirsiniz.
+                  </p>
                 </div>
+                <a
+                  href="#"
+                  id="card-odeme-button"
+                  class="musteri-ol-link text-center"
+                  >Ödeme Yap</a
+                >
+              </div>
             </div>
-        </section>
-
-        <div class="container text-center "><button id="dahafazlagor"><img class="img-fluid me-2" src="./img/arrow-down.svg" alt=""> Daha Fazla Gör</button> </div>
-
-        <section class="mt-5">
-            <div class="container">
-                <a id="yukaricik" href="#id1" class="btn d-none d-md-block"><svg xmlns="http://www.w3.org/2000/svg"
-                        width="16" height="16" fill="currentColor" class="bi bi-arrow-up me-1" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
-                    </svg> <span class="d-none d-xl-inline-block">Yukarı Çık</span></a>
-                <h3 class="text-center">Hizmetler</h3>
-                <div class="row">
-                    <div class="col-12 col-lg-4 p-3">
-                        <div class="card bg-light" id="card-height1">
-                            <img class="card-img-top"
-                                src="./img/hizmet1card.png"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <div>
-                                    <h5 class="card-title">Maaşım Garantide</h5>
-                                    <p class="card-text">Maaşınızı Garanti BBVA’dan alıyorsanız, Maaşım Garantide ile
-                                        fırsatlar sizi bekliyor!</p>
-                                </div>
-                                <a href="#" class="link pb-3"><img class="pb-1 me-2"
-                                        src="./img/card-icon.svg"
-                                        alt=""> <span>Detaylı Bilgi</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 p-3">
-                        <div class="card bg-light" id="card-height1">
-                            <img class="card-img-top"
-                                src="./img/hizmet2card.png"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <div>
-                                    <h5 class="card-title">Emekli Maaş Ödemeleri</h5>
-                                    <p class="card-text">Emekli maaşınızı Garanti BBVA'ya taşıyın, hem emekli promosyonu
-                                        kazanın hem de kolay ve hızlı bankacılık hizmetlerinden faydalanın!</p>
-                                </div>
-                                <a href="#" class="link pb-3"><img class="pb-1 me-2"
-                                        src="./img/card-icon.svg"
-                                        alt=""> <span>Detaylı Bilgi</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 p-3">
-                        <div class="card bg-light" id="card-height1">
-                            <img class="card-img-top"
-                                src="./img/hizmet3card.png"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <div>
-                                    <h5 class="card-title">Maaş Müşterilerine Özel Krediler</h5>
-                                    <p class="card-text">Her türlü ihtiyacınız için kredilerde size özel indirim ve
-                                        fırsatlar Maaşım Garanti'de ile sizinle!
-                                    </p>
-                                </div>
-                                <a href="#" class="link pb-3"><img class="pb-1 me-2"
-                                        src="./img/card-icon.svg"
-                                        alt=""> <span>Detaylı Bilgi</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 p-3">
-                        <div class="card bg-light" id="card-height2">
-                            <img class="card-img-top"
-                                src="./img/hizmet4card.png"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <div>
-                                    <h5 class="card-title">Garanti BBVA Benim Bankacım</h5>
-                                    <p class="card-text">Bankacılık işlemlerinizi şubenize uğramaya gerek kalmadan
-                                        bulunduğunuz yerden kolayca gerçekleştirebilirsiniz.</p>
-                                </div>
-                                <a href="#" class="link pb-3"><img class="pb-1 me-2"
-                                        src="./img/card-icon.svg"
-                                        alt=""> <span>Detaylı Bilgi</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 p-3">
-                        <div class="card bg-light" id="card-height2">
-                            <img class="card-img-top"
-                                src="./img/hizmet5card.png"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <div>
-                                    <h5 class="card-title">Kiralık Kasa</h5>
-                                    <p class="card-text">Değerli eşya ve belgelerinizin her zaman güvende olmasını
-                                        istiyorsanız Garanti BBVA Kiralık Kasa hizmetimizden yararlanabilirsiniz.</p>
-                                </div>
-                                <a href="#" class="link pb-3"><img class="pb-1 me-2"
-                                        src="./img/card-icon.svg"
-                                        alt=""> <span>Detaylı Bilgi</span></a>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <div class="col-12 col-lg-4 p-3">
+            <div class="card bg-light" id="card-height1">
+              <img
+                class="card-img-top"
+                src="./img/card3.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title">Ödeme İste</h5>
+                  <p class="card-text">
+                    Beklediğiniz bir ödeme varsa ya da nakde ihtiyaç
+                    duyuyorsanız tanıdıklarınızdan para transferi talep edebilir
+                    ve sizden istenen para transferi taleplerini takip
+                    edebilirsiniz.
+                  </p>
                 </div>
+                <a href="#" class="link pb-3"
+                  ><img class="pb-1 me-2" src="./img/card-icon.svg" alt="" />
+                  <span>Detaylı Bilgi</span></a
+                >
+              </div>
             </div>
-        </section>
-
-        <section id="kendimicin-div" class="bg-light ">
-            <div class="container py-3">
-                <a href="" id="kendimicin">Kendim İçin</a>
-                <span><img src="./img/right-arrow.svg" alt=""></span>
-                <a href="" id="kendimicin2" aria-disabled="true">Ödemeler ve Hizmetler</a>
-            </div>
-        </section>
-
-        <section id="prefooter">
-            <div class="container">
-                <div class="row justify-content-center ">
-                    <div class="col-lg-3 col-12">
-                        <h5>Faydalı Linkler</h5>
-                        <div class="row justify-content-between">
-                            <div id="text-start" class="col-lg-12 col-6">
-                                <p>Kampanyalar</p>
-                                <p>Şube ve ATM Arama</p>
-                                <p>Yatırım Köşesi</p>
-                                <p>Borsa - Hisse Senetleri</p>
-                                <p>Borsa İşlem Saatleri</p>
-                                <p>Döviz Kurları</p>
-                            </div>
-                            <div id="text-end" class="col-lg-12 col-6">
-                                <p>Altın Fiyatları</p>
-                                <p>Garanti BBVA'dan Haberler</p>
-                                <p>Tedarikçi Portal</p>
-                                <p>Emekli Sandığı</p>
-                                <p>Sıkça Sorulan Sorular</p>
-                                <p>Blog</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-12 ">
-                        <h5 id="cizgi" class="pt-3 pt-lg-0">Hesaplama ve Başvuru</h5>
-                        <div class="row justify-content-between">
-                            <div id="text-start" class="col-lg-12 col-6">
-                                <p>Hesaplama Araçları</p>
-                                <p>Bireysel İhtiyaç Kredisi</p>
-                                <p>Kredi Hesaplama</p>
-                                <p>Hızlı Kredi Başvurusu</p>
-                                <p>Kredili Mevduat Hesabı (KMH)</p>
-                                <p>Taşıt Kredisi Hesaplama</p>
-                            </div>
-                            <div id="text-end" class="col-lg-12 col-6">
-                                <p>Konut Kredisi Hesaplama</p>
-                                <p>Mevduat Faizi Hesaplama</p>
-                                <p>Kasko Sigortası</p>
-                                <p>Kredi Kartı Başvurusu</p>
-                                <p>Kredi Kartı Başvuru Takibi</p>
-                                <p>İletişim Formu</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-12">
-                        <h5 id="cizgi" class="pt-3 pt-lg-0">İlginizi Çekebilir</h5>
-                        <div class="row justify-content-between">
-                            <div id="text-start" class="col-lg-12 col-6">
-                                <p>Yatırımcı İlişkileri</p>
-                                <p>Bilgi Toplumu Hizmetleri</p>
-                                <p>Yetenek ve Kültür</p>
-                                <p>Gayrimenkuller</p>
-                                <p>Açık Bankacılık</p>
-                                <p>EYT Kredisi</p>
-                            </div>
-                            <div id="text-end" class="col-lg-12 col-6">
-                                <p>MTV Ödeme</p>
-                                <p>Vadeli Mevduat Hesabı</p>
-                                <p>Engelsiz Bankacılık</p>
-                                <p>Hesabını Bilen Kadınlar</p>
-                                <p>Ödeme İste</p>
-                                <p>Emekli Promosyon</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-12">
-                        <h5 id="cizgi" class="pt-3 pt-lg-0">Listeler/Duyurular</h5>
-                        <div class="row justify-content-between ">
-                            <div id="text-start" class="col-lg-12 col-6">
-                                <p>2024 Mevduat Zaman Aşımı</p>
-                                <p>2024 Yatırım Zaman Aşımı</p>
-                                <p>2025 Yatırım Zaman Aşımı</p>
-                            </div>
-                            <div id="text-end" class="col-lg-12 col-6">
-                                <p>TMSF Mevduat Sigortası</p>
-                                <p>2024 Zaman Aşımı Duyurusu</p>
-                                <p>Alacak Satışı İhale Duyurusu</p>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <div class="col-12 col-lg-4 p-3">
+            <div class="card bg-light" id="card-height2">
+              <img
+                class="card-img-top"
+                src="./img/card4.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title">Trafik Para Cezası Ödeme</h5>
+                  <p class="card-text">
+                    Garanti BBVA kredi ve banka kartlarıyla trafik para
+                    cezalarınızı hızlıca ödeyebilirsiniz.
+                  </p>
                 </div>
+                <a
+                  href="#"
+                  id="card-odeme-button"
+                  class="musteri-ol-link text-center"
+                  >Ödeme Yap</a
+                >
+              </div>
             </div>
-        </section>
-
-        <footer class="last-footer py-xl-5 py-4">
-            <div class="container">
-                <div class="row  ">
-                    <div class="col-lg-9 ">
-                        <div class="logoresponsive">
-                            <img class=" " src="./img/logo.png"
-                                alt="">
-                            <ul class="footer-column2 d-lg-flex d-block justify-content-center  justify-content-md-start pt-4">
-                                <li class="footer-son-li"><a href="">Kişisel Verilerin Korunması</a></li>
-                                <li class="footer-son-li"><a href="">Gizlilik Politikası </a></li>
-                                <li class="footer-son-li"><a href="">Güvenlik </a></li>
-                                <li class="footer-son-li"><a href="">Müşteri Deneyimi Destek</a></li>
-                                <li class="footer-son-li"><a href="">İletişim</a></li>
-                                <li class="footer-son-li"><a href="">Hakkımızda </a></li>
-                                <li class="footer-son-li"><a href="">Sözleşmeler</a></li>
-                                <li class="footer-son-li"><a href="">Çerez Aydınlatma Metni </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mt-3">
-                        <div class="ikon">
-                            <ul class="d-flex ikon-ul justify-content-end">
-                                <li class="d-none d-xl-block"><a class="" href=""><i class="bi bi-globe-americas me-2 "></i></a>
-                                </li>
-                                <li class="link">EN</li>
-                                <li><i class="bi bi-facebook ms-4"></i></li>
-                                <li><i class="bi bi-twitter-x ms-3 "></i></li>
-                                <li><i class="bi bi-instagram ms-3"></i></li>
-                                <li> <i class="bi bi-youtube ms-3"></i></li>
-                                <li><i class="bi bi-linkedin ms-3" style="width: 2rem; height: 2rem; border-radius: 75%;"></i></li>
-                            </ul>
-                        </div>
-                        <li class="mt-xl-5 mt-3 mb-xl-3 mb-1 site"><a class="site-a" href="">Site Haritası</a></li>
-                    </div>
-                    <p class="small son text-white-50 pt-3 pb-3 ">Copyright © 2024, T. Garanti Bankası A.Ş</p>
+          </div>
+          <div class="col-12 col-lg-4 p-3">
+            <div class="card bg-light" id="card-height2">
+              <img
+                class="card-img-top"
+                src="./img/card5.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title">HGS</h5>
+                  <p class="card-text">
+                    HGS başvuru ve bakiye yükleme işlemlerinizde Garanti BBVA
+                    Mobil ve İnternet Bankacılığı seçeneklerinden
+                    yararlanabilir, rahat ve hızlı bir geçişin keyfini
+                    sürebilirsiniz.
+                  </p>
                 </div>
-        </footer>
+                <a href="#" class="link mb-3"
+                  ><img class="pb-1 me-2" src="./img/card-icon.svg" alt="" />
+                  <span>Detaylı Bilgi</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 p-3">
+            <div class="card bg-light" id="card-height2">
+              <img
+                class="card-img-top"
+                src="./img/card6.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title">Fatura Ödeme</h5>
+                  <p class="card-text">
+                    Online fatura ödeme işlemlerinizi Garanti BBVA ile hızlı ve
+                    güvenli bir şekilde gerçekleştirin.
+                  </p>
+                </div>
+                <a href="#" class="link pb-3"
+                  ><img class="pb-1 me-2" src="./img/card-icon.svg" alt="" />
+                  <span>Detaylı Bilgi</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <script>
-            window.onscroll = function () {
-                var navbar = document.getElementById("id1");
-                var otherElement = document.getElementById("asd");
-                /* if (window.pageYOffset > otherElement.offsetTop) {
+    <div class="container text-center">
+      <button id="dahafazlagor">
+        <img class="img-fluid me-2" src="./img/arrow-down.svg" alt="" /> Daha
+        Fazla Gör
+      </button>
+    </div>
+
+    <section class="mt-5">
+      <div class="container">
+        <a id="yukaricik" href="#id1" class="btn d-none d-md-block"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-up me-1"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"
+            />
+          </svg>
+          <span class="d-none d-xl-inline-block">Yukarı Çık</span></a
+        >
+        <h3 class="text-center">Hizmetler</h3>
+        <div class="row">
+          <div class="col-12 col-lg-4 p-3">
+            <div class="card bg-light" id="card-height1">
+              <img
+                class="card-img-top"
+                src="./img/hizmet1card.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title">Maaşım Garantide</h5>
+                  <p class="card-text">
+                    Maaşınızı Garanti BBVA’dan alıyorsanız, Maaşım Garantide ile
+                    fırsatlar sizi bekliyor!
+                  </p>
+                </div>
+                <a href="#" class="link pb-3"
+                  ><img class="pb-1 me-2" src="./img/card-icon.svg" alt="" />
+                  <span>Detaylı Bilgi</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 p-3">
+            <div class="card bg-light" id="card-height1">
+              <img
+                class="card-img-top"
+                src="./img/hizmet2card.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title">Emekli Maaş Ödemeleri</h5>
+                  <p class="card-text">
+                    Emekli maaşınızı Garanti BBVA'ya taşıyın, hem emekli
+                    promosyonu kazanın hem de kolay ve hızlı bankacılık
+                    hizmetlerinden faydalanın!
+                  </p>
+                </div>
+                <a href="#" class="link pb-3"
+                  ><img class="pb-1 me-2" src="./img/card-icon.svg" alt="" />
+                  <span>Detaylı Bilgi</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 p-3">
+            <div class="card bg-light" id="card-height1">
+              <img
+                class="card-img-top"
+                src="./img/hizmet3card.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title">Maaş Müşterilerine Özel Krediler</h5>
+                  <p class="card-text">
+                    Her türlü ihtiyacınız için kredilerde size özel indirim ve
+                    fırsatlar Maaşım Garanti'de ile sizinle!
+                  </p>
+                </div>
+                <a href="#" class="link pb-3"
+                  ><img class="pb-1 me-2" src="./img/card-icon.svg" alt="" />
+                  <span>Detaylı Bilgi</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 p-3">
+            <div class="card bg-light" id="card-height2">
+              <img
+                class="card-img-top"
+                src="./img/hizmet4card.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title">Garanti BBVA Benim Bankacım</h5>
+                  <p class="card-text">
+                    Bankacılık işlemlerinizi şubenize uğramaya gerek kalmadan
+                    bulunduğunuz yerden kolayca gerçekleştirebilirsiniz.
+                  </p>
+                </div>
+                <a href="#" class="link pb-3"
+                  ><img class="pb-1 me-2" src="./img/card-icon.svg" alt="" />
+                  <span>Detaylı Bilgi</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 p-3">
+            <div class="card bg-light" id="card-height2">
+              <img
+                class="card-img-top"
+                src="./img/hizmet5card.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title">Kiralık Kasa</h5>
+                  <p class="card-text">
+                    Değerli eşya ve belgelerinizin her zaman güvende olmasını
+                    istiyorsanız Garanti BBVA Kiralık Kasa hizmetimizden
+                    yararlanabilirsiniz.
+                  </p>
+                </div>
+                <a href="#" class="link pb-3"
+                  ><img class="pb-1 me-2" src="./img/card-icon.svg" alt="" />
+                  <span>Detaylı Bilgi</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kendimicin-div" class="bg-light">
+      <div class="container py-3">
+        <a href="" id="kendimicin">Kendim İçin</a>
+        <span><img src="./img/right-arrow.svg" alt="" /></span>
+        <a href="" id="kendimicin2" aria-disabled="true"
+          >Ödemeler ve Hizmetler</a
+        >
+      </div>
+    </section>
+
+    <section id="prefooter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-12">
+            <h5>Faydalı Linkler</h5>
+            <div class="row justify-content-between">
+              <div id="text-start" class="col-lg-12 col-6">
+                <p>Kampanyalar</p>
+                <p>Şube ve ATM Arama</p>
+                <p>Yatırım Köşesi</p>
+                <p>Borsa - Hisse Senetleri</p>
+                <p>Borsa İşlem Saatleri</p>
+                <p>Döviz Kurları</p>
+              </div>
+              <div id="text-end" class="col-lg-12 col-6">
+                <p>Altın Fiyatları</p>
+                <p>Garanti BBVA'dan Haberler</p>
+                <p>Tedarikçi Portal</p>
+                <p>Emekli Sandığı</p>
+                <p>Sıkça Sorulan Sorular</p>
+                <p>Blog</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <h5 id="cizgi" class="pt-3 pt-lg-0">Hesaplama ve Başvuru</h5>
+            <div class="row justify-content-between">
+              <div id="text-start" class="col-lg-12 col-6">
+                <p>Hesaplama Araçları</p>
+                <p>Bireysel İhtiyaç Kredisi</p>
+                <p>Kredi Hesaplama</p>
+                <p>Hızlı Kredi Başvurusu</p>
+                <p>Kredili Mevduat Hesabı (KMH)</p>
+                <p>Taşıt Kredisi Hesaplama</p>
+              </div>
+              <div id="text-end" class="col-lg-12 col-6">
+                <p>Konut Kredisi Hesaplama</p>
+                <p>Mevduat Faizi Hesaplama</p>
+                <p>Kasko Sigortası</p>
+                <p>Kredi Kartı Başvurusu</p>
+                <p>Kredi Kartı Başvuru Takibi</p>
+                <p>İletişim Formu</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <h5 id="cizgi" class="pt-3 pt-lg-0">İlginizi Çekebilir</h5>
+            <div class="row justify-content-between">
+              <div id="text-start" class="col-lg-12 col-6">
+                <p>Yatırımcı İlişkileri</p>
+                <p>Bilgi Toplumu Hizmetleri</p>
+                <p>Yetenek ve Kültür</p>
+                <p>Gayrimenkuller</p>
+                <p>Açık Bankacılık</p>
+                <p>EYT Kredisi</p>
+              </div>
+              <div id="text-end" class="col-lg-12 col-6">
+                <p>MTV Ödeme</p>
+                <p>Vadeli Mevduat Hesabı</p>
+                <p>Engelsiz Bankacılık</p>
+                <p>Hesabını Bilen Kadınlar</p>
+                <p>Ödeme İste</p>
+                <p>Emekli Promosyon</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <h5 id="cizgi" class="pt-3 pt-lg-0">Listeler/Duyurular</h5>
+            <div class="row justify-content-between">
+              <div id="text-start" class="col-lg-12 col-6">
+                <p>2024 Mevduat Zaman Aşımı</p>
+                <p>2024 Yatırım Zaman Aşımı</p>
+                <p>2025 Yatırım Zaman Aşımı</p>
+              </div>
+              <div id="text-end" class="col-lg-12 col-6">
+                <p>TMSF Mevduat Sigortası</p>
+                <p>2024 Zaman Aşımı Duyurusu</p>
+                <p>Alacak Satışı İhale Duyurusu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="last-footer py-xl-5 py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="logoresponsive">
+              <img class=" " src="./img/logo.png" alt="" />
+              <ul
+                class="footer-column2 d-lg-flex d-block justify-content-center justify-content-md-start pt-4"
+              >
+                <li class="footer-son-li">
+                  <a href="">Kişisel Verilerin Korunması</a>
+                </li>
+                <li class="footer-son-li">
+                  <a href="">Gizlilik Politikası </a>
+                </li>
+                <li class="footer-son-li"><a href="">Güvenlik </a></li>
+                <li class="footer-son-li">
+                  <a href="">Müşteri Deneyimi Destek</a>
+                </li>
+                <li class="footer-son-li"><a href="">İletişim</a></li>
+                <li class="footer-son-li"><a href="">Hakkımızda </a></li>
+                <li class="footer-son-li"><a href="">Sözleşmeler</a></li>
+                <li class="footer-son-li">
+                  <a href="">Çerez Aydınlatma Metni </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 mt-3">
+            <div class="ikon">
+              <ul class="d-flex ikon-ul justify-content-end">
+                <li class="d-none d-xl-block">
+                  <a class="" href=""
+                    ><i class="bi bi-globe-americas me-2"></i
+                  ></a>
+                </li>
+                <li class="link">EN</li>
+                <li><i class="bi bi-facebook ms-4"></i></li>
+                <li><i class="bi bi-twitter-x ms-3"></i></li>
+                <li><i class="bi bi-instagram ms-3"></i></li>
+                <li><i class="bi bi-youtube ms-3"></i></li>
+                <li>
+                  <i
+                    class="bi bi-linkedin ms-3"
+                    style="width: 2rem; height: 2rem; border-radius: 75%"
+                  ></i>
+                </li>
+              </ul>
+            </div>
+            <li class="mt-xl-5 mt-3 mb-xl-3 mb-1 site">
+              <a class="site-a" href="">Site Haritası</a>
+            </li>
+          </div>
+          <p class="small son text-white-50 pt-3 pb-3">
+            Copyright © 2024, T. Garanti Bankası A.Ş
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      window.onscroll = function () {
+        var navbar = document.getElementById("id1");
+        var otherElement = document.getElementById("asd");
+        /* if (window.pageYOffset > otherElement.offsetTop) {
                   navbar.classList.add("sticky");
                 } else {
                   navbar.classList.remove("sticky");
                 } */
-            };
-        </script>
+      };
+    </script>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>
