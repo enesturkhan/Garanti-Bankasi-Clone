@@ -25,9 +25,8 @@
 * {
   box-sizing: border-box;
 }
-
 @media (max-width: 1200px) {
-  div.arrow-display {
+  .arrow-display {
     display: none;
   }
 }
@@ -37,7 +36,61 @@
   }
 }
 
-@media (min-width: 1201px) {
+.blue-section {
+  background-image: url(/pages/yatirim/img/core-big.png);
+  background-size: cover;
+  background-position: center;
+}
+/* bootstrap'ten gelen container üzerinde biraz değişiklik yaptım */
+.container {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.language-label {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 24px;
+  padding-left: 32px;
+  color: #49a5e6 !important;
+}
+.language-label2 {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 24px;
+  color: #49a5e6 !important;
+}
+
+
+.language-label::before {
+  content: url("https://www.garantibbva.com.tr/content/dam/public-website/icons/static/international-icon.svg");
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  color: #49a5e6 !important;
+}
+
+.list-group-item {
+  color: #49a5e6 !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  text-wrap: nowrap;
+  display: flex;
+}
+.list-group-item a:link {
+  color: #49a5e6;
+}
+.list-group-item a:hover {
+  color: white;
+}
+.list-group-item a:visited {
+  color: #49a5e6;
+}
+
+@media (min-width: 1200px) {
   .blue-section h1 {
     font-size: 48px !important;
   }
@@ -47,13 +100,16 @@
   .blue-section {
     height: 360px;
   }
+  .footerline {
+    display: none;
+  }
+  .minfooter {
+    display: none;
+  }
+  .midfooter {
+    display: none;
+  }
 }
-/* bootstrap'ten gelen container üzerinde biraz değişiklik yaptım */
-.container {
-  padding-right: 16px;
-  padding-left: 16px;
-}
-
 @media (min-width: 992px) and (max-width: 1200px) {
   .blue-section h1 {
     font-size: 28px !important;
@@ -62,7 +118,16 @@
     font-size: 18px !important;
   }
   .blue-section {
-    height: 360px;
+    height: 224px;
+  }
+  .footerline {
+    display: none;
+  }
+  .fullfooter {
+    display: none;
+  }
+  .minfooter {
+    display: none;
   }
 }
 /* bootstrap'ten gelen container üzerinde biraz değişiklik yaptım */
@@ -70,7 +135,6 @@
   padding-right: 16px;
   padding-left: 16px;
 }
-
 @media (min-width: 768px) and (max-width: 991.98px) {
   .blue-section h1 {
     font-size: 20px !important;
@@ -83,6 +147,12 @@
   }
   .card-img-top {
     height: 240px;
+  }
+  .fullfooter {
+    display: none;
+  }
+  .midfooter {
+    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -98,12 +168,12 @@
   .card-img-top {
     height: 240px;
   }
-}
-
-.blue-section {
-  background-image: url(/pages/yatirim/img/core-big.png);
-  background-size: cover;
-  background-position: center;
+  .fullfooter {
+    display: none;
+  }
+  .midfooter {
+    display: none;
+  }
 }
 
 .card-body {
@@ -125,15 +195,23 @@ h1 {
   font-weight: bolder;
 }
 
-.footer {
+.fullfooter {
   height: 333px;
   background-color: #062146;
   padding: 53px 0px 63px;
 }
-.footer flink {
-  color: white;
+
+.minfooter {
+
+  background-color: #062146;
+  padding: 22px 0px 31px;
 }
 
+.midfooter {
+
+  background-color: #062146;
+  padding: 22px 0px 31px;
+}
 .icons img {
   width: 24px;
   margin-right: 9px;
@@ -143,7 +221,7 @@ h1 {
 li {
   line-height: 24px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   color: #004490;
   padding-right: 8px;
   padding-left: 0px;
@@ -154,9 +232,10 @@ li {
   padding-bottom: 10px;
 }
 
-.prefooter {
+/* .prefooter {
   margin-bottom: 0px !important;
-}
+}*/
+
 .header-topbar {
   height: 32px;
   background-color: #f4f4f4;
