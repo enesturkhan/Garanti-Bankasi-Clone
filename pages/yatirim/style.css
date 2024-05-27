@@ -25,11 +25,13 @@
 * {
   box-sizing: border-box;
 }
+
 @media (max-width: 1200px) {
   .arrow-display {
     display: none;
   }
 }
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px !important;
@@ -41,6 +43,7 @@
   background-size: cover;
   background-position: center;
 }
+
 /* bootstrap'ten gelen container üzerinde biraz değişiklik yaptım */
 .container {
   padding-right: 16px;
@@ -55,6 +58,7 @@
   padding-left: 32px;
   color: #49a5e6 !important;
 }
+
 .language-label2 {
   display: flex;
   align-items: center;
@@ -80,12 +84,15 @@
   text-wrap: nowrap;
   display: flex;
 }
+
 .list-group-item a:link {
   color: #49a5e6;
 }
+
 .list-group-item a:hover {
   color: white;
 }
+
 .list-group-item a:visited {
   color: #49a5e6;
 }
@@ -94,83 +101,107 @@
   .blue-section h1 {
     font-size: 48px !important;
   }
+
   .blue-section p {
     font-size: 18px !important;
   }
+
   .blue-section {
     height: 360px;
   }
+
   .footerline {
     display: none;
   }
+
   .minfooter {
     display: none;
   }
+
   .midfooter {
     display: none;
   }
 }
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .blue-section h1 {
     font-size: 28px !important;
   }
+
   .blue-section p {
     font-size: 18px !important;
   }
+
   .blue-section {
     height: 224px;
   }
+
   .footerline {
     display: none;
   }
+
   .fullfooter {
     display: none;
   }
+
   .minfooter {
     display: none;
   }
 }
+
 /* bootstrap'ten gelen container üzerinde biraz değişiklik yaptım */
 .container {
   padding-right: 16px;
   padding-left: 16px;
 }
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   .blue-section h1 {
     font-size: 20px !important;
   }
+
   .blue-section p {
     font-size: 15px !important;
   }
+
   .blue-section {
     height: 224px;
   }
+
   .card-img-top {
     height: 240px;
   }
+
   .fullfooter {
     display: none;
   }
+
   .midfooter {
     display: none;
   }
 }
+
 @media (max-width: 768px) {
   .blue-section h1 {
     font-size: 20px !important;
   }
+
   .blue-section p {
     font-size: 15px !important;
   }
+
   .blue-section {
     height: 224px;
   }
+
   .card-img-top {
     height: 240px;
   }
+
   .fullfooter {
     display: none;
   }
+
   .midfooter {
     display: none;
   }
@@ -212,6 +243,7 @@ h1 {
   background-color: #062146;
   padding: 22px 0px 31px;
 }
+
 .icons img {
   width: 24px;
   margin-right: 9px;
@@ -532,7 +564,8 @@ button.mainbar-search {
 }
 
 .nav-item {
-  margin-right: 10px; /* Her liste öğesi arasında boşluk bırak */
+  margin-right: 10px;
+  /* Her liste öğesi arasında boşluk bırak */
 }
 
 .snav-link {
@@ -580,4 +613,22 @@ button.mainbar-search {
   background-color: #004481;
   background-size: cover;
   background-position: 50%;
+}
+
+/* sabit buton yukarı çık  */
+.top-botton {
+  position: fixed;
+  right: 32px;
+  bottom: 24px;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  background-color: #1464a5;
+  color: #ffffff;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 12px;
 }
