@@ -298,7 +298,24 @@ button.mainbar-search {
 
 /* buraya kadar olan css kodu ortak */
 /* fontlar, navbar */
+/* sabit yukarı çık butonu */
 
+.top-botton {
+  position: fixed;
+  right: 32px;
+  bottom: 24px;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  background-color: #1464a5;
+  color: #ffffff;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 12px;
+}
 
 /* header bölümü */
 .carousel-inner {
@@ -607,12 +624,12 @@ button.mainbar-search {
   }
 }
 
-i {
+.ikon i {
   color: #039fe2;
   font-size: 1.5rem;
 }
 
-i:hover {
+.ikon i:hover {
   color: white;
 }
 
